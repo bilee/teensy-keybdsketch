@@ -1,0 +1,22 @@
+// this works with Teensy 2.0
+// when button pressed and released, println shows 'button press' and 'button release'
+
+void loop() {
+  // Update all the button objects.
+  button1.update();
+  button2.update();
+  button3.update();
+
+  // Check each button for "falling" edge.
+  // falling = high (not pressed - voltage from pullup resistor)
+  //           to low (pressed - button connects pin to ground)
+  if (button1.fallingEdge()) {
+    Keyboard.println("B1 press");
+  }
+  if (button2.fallingEdge()) {
+    Keyboard.println("B2 press");
+  }
+  if (button3.fallingEdge()) {
+    Keyboard.println("B3 press");
+  }
+}
