@@ -1,25 +1,27 @@
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-keybd map for MIXXX
-F1	rate -		L
-F2	rate +		L
-F3	temp -		L
-F4	temp +		L
-F5	rate -		R
-F6	rate +		R
-F7	temp -		R
-F8	temp +		R
+@ = desired function = 20
 
-1	sync		L
+keybd map for MIXXX
+F1	rate -		L     @
+F2	rate +		L     @
+F3	temp -		L     @
+F4	temp +		L     @
+F5	rate -		R     @
+F6	rate +		R     @
+F7	temp -		R     @
+F8	temp +		R     @
+
+1	sync		L         @
 2	loop in		L
 3	loop out	L
 4	reloop/exit	L
-5	flanger (FX)	L
-6	sync		R
+5	flanger (FX)	L   
+6	sync		R         @
 7	loop in		R
 8	loop out	R
 9	reloop/exit	R
-10	flanger (FX)	R
+10	flanger (FX)	R 
 
 Q	4 bar loop	L
 W	loop /2		L
@@ -30,16 +32,16 @@ U	4 bar loop	R
 I	loop /2		R
 O	loop *2		R
 
-A	back		L
-S	fwd		L
-D	play		L
-F	cue		L
-G	fader		L
-H	fader		R
-J	back		R
-K	fwd		R
-L	play		R
-:	cue		R
+A	back		L         @
+S	fwd		L           @
+D	play		L         @
+F	cue		L           @
+G	fader		L         @
+H	fader		R         @
+J	back		R         @
+K	fwd		R           @
+L	play		R         @
+:	cue		R           @
 
 B	low kill	L
 N	low kill 	R
