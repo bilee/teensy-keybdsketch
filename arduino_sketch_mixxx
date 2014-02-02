@@ -1,0 +1,97 @@
+//arduino leonardo sketch for MIXXX controller
+
+// leo micro duo can do emultation natively
+//this orks with tactile buttons;
+//N.O. push buttons seem to have bad bounce issue- re-testing
+//==================================================================================================================
+
+/* MIXXX MAP
+F1  rate -  left mix
+F2  rate +  left mix
+F3  temp -  left mix
+F4  temp+   left mix
+F5  rate -  right mix
+F6  rate +  right mix
+F7  temp -  right mix
+F8  temp+   right mix
+
+1    sync    left
+2    loop in  left
+3    loop out  L
+4    reloop/exit  L
+5    flanger(FX)  L
+6    sync      R
+7    loop in    R
+8    loop out    R
+9    reloop/exit   R
+10    flanger (FX)  R   -->10?
+
+Q    4 bar loop    L
+W    loop /2    L
+E    loop *2    L
+T    headphone  L
+Y    headphone  R
+U    4 bar loop  R
+I    loop /2    R
+O    loop *2    R
+
+A    back    L
+S    forward  L
+D    play    L
+F    cue    L
+G    fader    L
+H    fader    L
+J    back    R
+K    forward    R
+L    play    R
+;    cue    R      --> is this supposed to be :?
+
+B    low kill L 
+N    low kill R
+
+*/
+//===================================================================================================
+
+//buttons
+
+const int button2 = 2;
+const int button3 = 3;
+const int button4 = 4;
+const int button5 = 5;
+const int button6 = 6;
+const int button7 = 7;
+const int button8 = 8;
+const int button9 = 9;
+
+void setup() { 
+  pinMode(button2, INPUT_PULLUP);    //S    forward  L
+ pinMode(button3, INPUT_PULLUP);    //D    play    L
+ pinMode(button4, INPUT_PULLUP);    //F    cue    L
+ pinMode(button4, INPUT_PULLUP);    //G    fader    L
+ pinMode(button5, INPUT_PULLUP);    //H    fader    L
+ pinMode(button6, INPUT_PULLUP);    //J    back    R
+ pinMode(button7, INPUT_PULLUP);    //K    forward    R
+ pinMode(button8, INPUT_PULLUP);    //L    play    R
+       
+
+  
+  Serial.begin(9600);
+  // initialize mouse control:
+  
+  Keyboard.begin();
+}
+
+void loop() {
+  // use serial input to control the mouse:
+  
+  
+    
+  
+
+  // use the pushbuttons to control the keyboard:
+  if (digitalRead(button2) == HIGH) 
+    Keyboard.write('u'); 
+ delay(150); 
+ 
+
+}
