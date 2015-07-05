@@ -1,7 +1,7 @@
 //arduino leonardo sketch for MIXXX controller
 
 // leo micro duo can do emultation natively
-//this orks with tactile buttons;
+//this works with tactile buttons;
 //N.O. push buttons seem to have bad bounce issue- re-testing
 //==================================================================================================================
 
